@@ -1,3 +1,4 @@
+import pandas as pd
 import random
 lst = ['robot'] * 10
 lst += ['human'] * 10
@@ -11,3 +12,7 @@ for value in arr:
         lst1.append({'whoAmI_robot':1,'whoAmI_human':0})
     else:
         lst1.append({'whoAmI_robot':0,'whoAmI_human':1})
+data1 = pd.DataFrame(lst1)
+data1.head()
+print(data)
+print(data1)
